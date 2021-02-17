@@ -191,4 +191,38 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="_qiRyImxUEeuzAeuxiKYaBA" name="AFEGIR RESPOSTA"/>
     </ownedOperation>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NJcFgGx4EeuzlZprn0XTzQ" name="Helper">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cnAmwGx4EeuzlZprn0XTzQ" name="comprobarIDUser" postcondition="_cnAmwmx4EeuzlZprn0XTzQ" precondition="_cnAmwWx4EeuzlZprn0XTzQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_cnAmwWx4EeuzlZprn0XTzQ" name="QUE COINCIDEIXI EL DNI"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_cnAmwmx4EeuzlZprn0XTzQ" name="BOOLEAN DEL DNI"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_iyDMsGx4EeuzlZprn0XTzQ" name="comprobarIDFormulari" postcondition="_iyDMsmx4EeuzlZprn0XTzQ" precondition="_iyDMsWx4EeuzlZprn0XTzQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_iyDMsWx4EeuzlZprn0XTzQ" name="COMPROBAR ID FORMULARI COINCIDENT"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_iyDMsmx4EeuzlZprn0XTzQ" name="BOOLEAN DE SI EL ID COINCIDEIX"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ru9dUGx4EeuzlZprn0XTzQ" name="comprobarIDEntrenament" postcondition="_ru9dUmx4EeuzlZprn0XTzQ" precondition="_ru9dUWx4EeuzlZprn0XTzQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_ru9dUWx4EeuzlZprn0XTzQ" name="COMPROBAR ID ENTRENAMENT COINCIDENT"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_ru9dUmx4EeuzlZprn0XTzQ" name="BOOLEAN ID COINCIDENT"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0TjUkGx4EeuzlZprn0XTzQ" name="comprobarIDEquips" postcondition="_0TjUkmx4EeuzlZprn0XTzQ" precondition="_0TjUkWx4EeuzlZprn0XTzQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_0TjUkWx4EeuzlZprn0XTzQ" name="COMPROBAR ID EQUIP"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_0TjUkmx4EeuzlZprn0XTzQ" name="BOOLEAN DEL RESULTAT DEL ID COINCIDENT"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6sksIGx4EeuzlZprn0XTzQ" name="comprobarRol" postcondition="_6sksImx4EeuzlZprn0XTzQ" precondition="_6sksIWx4EeuzlZprn0XTzQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_6sksIWx4EeuzlZprn0XTzQ" name="COMPROBAR SI EL ID DE ROL COINCIDEIX"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_6sksImx4EeuzlZprn0XTzQ" name="BOOLEAN SI LA ID ES COINCIDENT"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Brp-IGx5EeuzlZprn0XTzQ" name="comprobarIDEspecialitat" postcondition="_Brp-Imx5EeuzlZprn0XTzQ" precondition="_Brp-IWx5EeuzlZprn0XTzQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_Brp-IWx5EeuzlZprn0XTzQ" name="COMPROBAR SI LA ID DE ESPECIALITAT COINCIDEIX"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_Brp-Imx5EeuzlZprn0XTzQ" name="BOOLEAN DE SI COINCIDEIX"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_L_wrMGx5EeuzlZprn0XTzQ" name="comprobarIDRespForm" postcondition="_L_wrMmx5EeuzlZprn0XTzQ" precondition="_L_wrMWx5EeuzlZprn0XTzQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_L_wrMWx5EeuzlZprn0XTzQ" name="COMPROBAR SI COINCIDEIX LA ID DEL FORMULARI RESPOST"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_L_wrMmx5EeuzlZprn0XTzQ" name="BOOLEAN DE SI EL ID ES COINCIDENT"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ye7hoGx5EeuzlZprn0XTzQ" name="comprobarIDPartit" postcondition="_Ye7homx5EeuzlZprn0XTzQ" precondition="_Ye7hoWx5EeuzlZprn0XTzQ">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_Ye7hoWx5EeuzlZprn0XTzQ" name="COMPROBAR SI EL ID DE PARTIT ES COINCIDENT"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_Ye7homx5EeuzlZprn0XTzQ" name="BOOL SI EL ID ES COINCIDENT"/>
+    </ownedOperation>
+  </packagedElement>
 </uml:Model>
