@@ -19,8 +19,17 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_EIYpgFzGEeu97KtrE_518g" name="telefon">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_6te5YHawEeuuKfh1SEgYBw" name="password">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4P5SUHEuEeuftush4iydLA" name="calendari" type="_xmbp4FzIEeu97KtrE_518g" association="_4P2PAHEuEeuftush4iydLA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4P6gcHEuEeuftush4iydLA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4P6gcXEuEeuftush4iydLA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Vnos3EuEeuftush4iydLA" name="convocatoria" type="_mPsKkGuvEeu2Q7EzIgXHgQ" association="_6VnosHEuEeuftush4iydLA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6VnotHEuEeuftush4iydLA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6VnotXEuEeuftush4iydLA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_B6u_8nEvEeuftush4iydLA" name="formulari" type="_j2Kp4FzGEeu97KtrE_518g" association="_B6uY4HEvEeuftush4iydLA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B6u_83EvEeuftush4iydLA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B6u_9HEvEeuftush4iydLA" value="1"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Sp8OcFzGEeu97KtrE_518g" name="borrarUsuari" postcondition="_ZekdYGF7EeuFioeGl-j8iQ" precondition="_QGfB0GC5EeuvKaimUGKcaw">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_QGfB0GC5EeuvKaimUGKcaw" name="comprobar que el dni a esborrar existeix a la taula d'usuaris a la base de dades"/>
@@ -36,7 +45,7 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_j2Kp4FzGEeu97KtrE_518g" name="Formulari" visibility="public">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_MhS_wFzHEeu97KtrE_518g" name="idCreador" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MhS_wFzHEeu97KtrE_518g" name="usuari" type="_cgtUsFzFEeu97KtrE_518g"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_uysMYFzHEeu97KtrE_518g" name="idFormulari">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -50,10 +59,6 @@
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_KCBzAGxUEeuzAeuxiKYaBA" name="idEquip" type="_KvKMYFzKEeu97KtrE_518g"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_CHMccXayEeuuKfh1SEgYBw" name="usuari" type="_cgtUsFzFEeu97KtrE_518g" association="_CHKnQHayEeuuKfh1SEgYBw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CHNDgHayEeuuKfh1SEgYBw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CHNqkHayEeuuKfh1SEgYBw" value="1"/>
-    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qLmGQGF5EeuFioeGl-j8iQ" name="afegirFormulari" postcondition="_fEe9AGF7EeuFioeGl-j8iQ" precondition="_18ao8GF5EeuFioeGl-j8iQ">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_18ao8GF5EeuFioeGl-j8iQ" name="comprobar dades formularis amb id creador i que no hi hagi id form repetit"/>
       <ownedRule xmi:type="uml:Constraint" xmi:id="_fEe9AGF7EeuFioeGl-j8iQ" name="AFEGIR FORMULARI"/>
@@ -63,14 +68,8 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="_hImX4mxSEeuzAeuxiKYaBA" name="haber esborrat el formulari de la base de dades"/>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xmbp4FzIEeu97KtrE_518g" name="Calendari">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_011lIFzIEeu97KtrE_518g" name="idUsuariCal" type="_cgtUsFzFEeu97KtrE_518g"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_mXt6oGuuEeu2Q7EzIgXHgQ" name="idEntrenamentCal">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_qtBuAGuuEeu2Q7EzIgXHgQ" name="idPartit">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xmbp4FzIEeu97KtrE_518g" name="Calendari" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_011lIFzIEeu97KtrE_518g" name="usuari" type="_cgtUsFzFEeu97KtrE_518g"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_LMPx0GF8EeuFioeGl-j8iQ" name="crearCalendari" postcondition="_LMPx0mF8EeuFioeGl-j8iQ" precondition="_LMPx0WF8EeuFioeGl-j8iQ">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_LMPx0WF8EeuFioeGl-j8iQ" name="DNI COINCIDENT, ID PARTIT O ENTRENAMENT COINCIDENT"/>
       <ownedRule xmi:type="uml:Constraint" xmi:id="_LMPx0mF8EeuFioeGl-j8iQ" name="crear calendari"/>
@@ -119,10 +118,10 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_g1g08FzJEeu97KtrE_518g" name="UsersRols">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_jiD6wFzJEeu97KtrE_518g" name="idUsuari" type="_cgtUsFzFEeu97KtrE_518g"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_luL0EFzJEeu97KtrE_518g" name="idRol" type="_2xKpYFzIEeu97KtrE_518g"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_oXJaYFzJEeu97KtrE_518g" name="idEspecialitat" type="_CTEmUFzJEeu97KtrE_518g"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_H4MmUFzKEeu97KtrE_518g" name="dataComençament">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jiD6wFzJEeu97KtrE_518g" name="usuari" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_luL0EFzJEeu97KtrE_518g" name="rol" type="_2xKpYFzIEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oXJaYFzJEeu97KtrE_518g" name="especialitat" type="_CTEmUFzJEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_H4MmUFzKEeu97KtrE_518g" name="dataInici">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_JUQ7sFzKEeu97KtrE_518g" name="dataFinal">
@@ -137,20 +136,17 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="_JmWfcmxbEeuzAeuxiKYaBA" name="MODIFICAR DATA FINALITZACIÓ"/>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_KvKMYFzKEeu97KtrE_518g" name="Equips">
+  <packagedElement xmi:type="uml:Class" xmi:id="_KvKMYFzKEeu97KtrE_518g" name="Equips" visibility="package">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_PARcQFzKEeu97KtrE_518g" name="idEquip">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_RKGPgFzKEeu97KtrE_518g" name="idEspecialitat" type="_CTEmUFzJEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1Lh2IHhEEeupKbpCq58DDg" name="usuari" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RKGPgFzKEeu97KtrE_518g" name="especialitat" type="_CTEmUFzJEeu97KtrE_518g"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_TVdT0FzKEeu97KtrE_518g" name="nomEquip">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Uf5tsFzKEeu97KtrE_518g" name="tag">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ffPmsXEvEeuftush4iydLA" name="equipjugador" type="_VWpIcFzKEeu97KtrE_518g" association="_ffO_oHEvEeuftush4iydLA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ffPmsnEvEeuftush4iydLA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ffPms3EvEeuftush4iydLA" value="1"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_9rs98GF7EeuFioeGl-j8iQ" name="afegirEquips" postcondition="_9rs98mF7EeuFioeGl-j8iQ" precondition="_9rs98WF7EeuFioeGl-j8iQ">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_9rs98WF7EeuFioeGl-j8iQ" name="ID EQUIP NO REPETIDA"/>
@@ -160,10 +156,6 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="_5d4EMWxTEeuzAeuxiKYaBA" name="ID EQUIP REPETIDA"/>
       <ownedRule xmi:type="uml:Constraint" xmi:id="_5d4EMmxTEeuzAeuxiKYaBA" name="ACTUALITZAR DADES EQUIP"/>
     </ownedOperation>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_VWpIcFzKEeu97KtrE_518g" name="EquipJugador">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_YbgnoFzKEeu97KtrE_518g" name="idUsuari" type="_cgtUsFzFEeu97KtrE_518g"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_aRcOgFzKEeu97KtrE_518g" name="idEquip" type="_KvKMYFzKEeu97KtrE_518g"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fXnQgGxUEeuzAeuxiKYaBA" name="afegirJugadorEquip" postcondition="_fXnQgmxUEeuzAeuxiKYaBA" precondition="_fXnQgWxUEeuzAeuxiKYaBA">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_fXnQgWxUEeuzAeuxiKYaBA" name="ID USUARI I ID EQUIP COINCIDENTS"/>
       <ownedRule xmi:type="uml:Constraint" xmi:id="_fXnQgmxUEeuzAeuxiKYaBA" name="AFEGIR JUGADOR"/>
@@ -174,8 +166,7 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_byQhAFzKEeu97KtrE_518g" name="Partits">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_eC8xQFzKEeu97KtrE_518g" name="idEquip" type="_KvKMYFzKEeu97KtrE_518g"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_f5T18FzKEeu97KtrE_518g" name="idEspecialitat" type="_CTEmUFzJEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_f5T18FzKEeu97KtrE_518g" name="especialitat" type="_CTEmUFzJEeu97KtrE_518g"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_hTFsUFzKEeu97KtrE_518g" name="resultat">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
@@ -191,10 +182,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="_THyvknE0EeuU0acaUT8jSw" name="Actualitzar resultat"/>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_IX1KAGuvEeu2Q7EzIgXHgQ" name="Entrenament">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_QFziUGuvEeu2Q7EzIgXHgQ" name="idEntrenament">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IX1KAGuvEeu2Q7EzIgXHgQ" name="Entrenament" visibility="private">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_d0Q2YGuvEeu2Q7EzIgXHgQ" name="data">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
     </ownedAttribute>
@@ -215,19 +203,9 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_mPsKkGuvEeu2Q7EzIgXHgQ" name="Convocatoria">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_zR3AYGuvEeu2Q7EzIgXHgQ" name="idUsuariResposta">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_1ro7MGuvEeu2Q7EzIgXHgQ" name="Resposta">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zR3AYGuvEeu2Q7EzIgXHgQ" name="usuari" type="_cgtUsFzFEeu97KtrE_518g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1ro7MGuvEeu2Q7EzIgXHgQ" name="resposta">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_57Q80HaxEeuuKfh1SEgYBw" name="usuari" type="_cgtUsFzFEeu97KtrE_518g" association="_57N5gHaxEeuuKfh1SEgYBw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_57TZEHaxEeuuKfh1SEgYBw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_57UAIHaxEeuuKfh1SEgYBw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_DkL-4XayEeuuKfh1SEgYBw" name="formulari" type="_j2Kp4FzGEeu97KtrE_518g" association="_DkKwwHayEeuuKfh1SEgYBw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DkL-4nayEeuuKfh1SEgYBw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DkMl8HayEeuuKfh1SEgYBw" value="1"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qiRyIGxUEeuzAeuxiKYaBA" name="afegirResposta" postcondition="_qiRyImxUEeuzAeuxiKYaBA" precondition="_qiRyIWxUEeuzAeuxiKYaBA">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_qiRyIWxUEeuzAeuxiKYaBA" name="ID USUARI, ID FORMULARI COINCIDENTS"/>
@@ -268,6 +246,18 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="_Ye7homx5EeuzlZprn0XTzQ" name="BOOL SI EL ID ES COINCIDENT"/>
     </ownedOperation>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4P2PAHEuEeuftush4iydLA" memberEnd="_4P5SUHEuEeuftush4iydLA _4P6gcnEuEeuftush4iydLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4P4EMHEuEeuftush4iydLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4P4EMXEuEeuftush4iydLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4P6gcnEuEeuftush4iydLA" name="usuari" type="_cgtUsFzFEeu97KtrE_518g" association="_4P2PAHEuEeuftush4iydLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6VnosHEuEeuftush4iydLA" memberEnd="_6Vnos3EuEeuftush4iydLA _6VoPwHEuEeuftush4iydLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6VnosXEuEeuftush4iydLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6VnosnEuEeuftush4iydLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6VoPwHEuEeuftush4iydLA" name="usuari" type="_cgtUsFzFEeu97KtrE_518g" association="_6VnosHEuEeuftush4iydLA"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_6_JG0HEuEeuftush4iydLA" memberEnd="_6_Jt4nEuEeuftush4iydLA _6_Jt5XEuEeuftush4iydLA" navigableOwnedEnd="_6_Jt4nEuEeuftush4iydLA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6_Jt4HEuEeuftush4iydLA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6_Jt4XEuEeuftush4iydLA" key="nature" value="UML_Nature"/>
@@ -277,6 +267,12 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6_Jt5HEuEeuftush4iydLA" value="1"/>
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_6_Jt5XEuEeuftush4iydLA" type="_cgtUsFzFEeu97KtrE_518g" association="_6_JG0HEuEeuftush4iydLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_B6uY4HEvEeuftush4iydLA" memberEnd="_B6u_8nEvEeuftush4iydLA _B6u_9XEvEeuftush4iydLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B6u_8HEvEeuftush4iydLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B6u_8XEvEeuftush4iydLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_B6u_9XEvEeuftush4iydLA" name="usuari" type="_cgtUsFzFEeu97KtrE_518g" association="_B6uY4HEvEeuftush4iydLA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_akztAHEvEeuftush4iydLA" memberEnd="_akztA3EvEeuftush4iydLA _ak0UEXEvEeuftush4iydLA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_akztAXEvEeuftush4iydLA" source="org.eclipse.papyrus">
@@ -290,37 +286,12 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_b9kPtnEvEeuftush4iydLA" name="rol" type="_2xKpYFzIEeu97KtrE_518g" association="_b9kPsHEvEeuftush4iydLA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_ffO_oHEvEeuftush4iydLA" memberEnd="_ffPmsXEvEeuftush4iydLA _ffPmtHEvEeuftush4iydLA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ffO_oXEvEeuftush4iydLA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ffPmsHEvEeuftush4iydLA" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ffPmtHEvEeuftush4iydLA" name="equips" type="_KvKMYFzKEeu97KtrE_518g" association="_ffO_oHEvEeuftush4iydLA"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_tY8vMHE0EeuU0acaUT8jSw"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_0MeRcHE0EeuU0acaUT8jSw"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_cmd3MHE5EeuU0acaUT8jSw" name="Main" visibility="package">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_wsVZQHE5EeuU0acaUT8jSw" name="altes"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zgwBoHE5EeuU0acaUT8jSw" name="modificar"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_0ednEHE5EeuU0acaUT8jSw" name="forms"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0ednEHE5EeuU0acaUT8jSw" name="consultes"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_2otREHE5EeuU0acaUT8jSw" name="auxiliar"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_hBElkHawEeuuKfh1SEgYBw" name="calendari"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_57N5gHaxEeuuKfh1SEgYBw" memberEnd="_57Q80HaxEeuuKfh1SEgYBw _57UAIXaxEeuuKfh1SEgYBw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_57PHoHaxEeuuKfh1SEgYBw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_57PHoXaxEeuuKfh1SEgYBw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_57UAIXaxEeuuKfh1SEgYBw" name="convocatoria" type="_mPsKkGuvEeu2Q7EzIgXHgQ" association="_57N5gHaxEeuuKfh1SEgYBw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_CHKnQHayEeuuKfh1SEgYBw" memberEnd="_CHMccXayEeuuKfh1SEgYBw _CHNqkXayEeuuKfh1SEgYBw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CHL1YHayEeuuKfh1SEgYBw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CHMccHayEeuuKfh1SEgYBw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_CHNqkXayEeuuKfh1SEgYBw" name="formulari" type="_j2Kp4FzGEeu97KtrE_518g" association="_CHKnQHayEeuuKfh1SEgYBw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_DkKwwHayEeuuKfh1SEgYBw" memberEnd="_DkL-4XayEeuuKfh1SEgYBw _DkMl8XayEeuuKfh1SEgYBw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DkLX0HayEeuuKfh1SEgYBw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DkL-4HayEeuuKfh1SEgYBw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_DkMl8XayEeuuKfh1SEgYBw" name="convocatoria" type="_mPsKkGuvEeu2Q7EzIgXHgQ" association="_DkKwwHayEeuuKfh1SEgYBw"/>
   </packagedElement>
 </uml:Model>
